@@ -1,0 +1,9 @@
+<p [ngClass]= "{'bgblue':isBlue, 'fgwhite': isWhite, 'bggreen': isGreen, 'fgblack': isBlack}"> hello world</p>
+
+<p [ngStyle]= "{ 'background-color': 'blue', 'color': 'white' }"> hello world</p>
+
+<button (click)="isBlue= true; isGreen=false"> set bgcolor to blue</button>
+<button (click)="isBlue= false; isGreen=true"> set bgcolor to green</button>
+
+<button (click)="isWhite= true; isBlack=false">set fore ground to white</button>
+<button (click)="isWhite= false; isBlack=true">set fore ground to black</button>
